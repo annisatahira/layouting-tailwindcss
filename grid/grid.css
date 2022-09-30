@@ -1,0 +1,90 @@
+/* main {
+  width: 70%;
+  margin: auto;
+} */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background-color: teal;
+}
+
+.box {
+  border: 1px dashed black;
+  background-color: pink;
+  padding: 20px;
+}
+
+.wrapper {
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+/* Styling pendukung */
+.wrapper div {
+  padding: 32px;
+  border: 1px solid black;
+}
+
+/* coloring */
+.box1,
+.box4 {
+  background-color: mediumseagreen;
+}
+
+.box2,
+.box6 {
+  background-color: steelblue;
+}
+
+.box3,
+.box5 {
+  background-color: gold;
+}
+
+.box1 {
+  grid-column-start: unset;
+  grid-column-end: unset;
+}
+
+.box2 {
+  grid-row-start: unset;
+  grid-row-end: unset;
+  grid-column-start: unset;
+}
+
+.box3 {
+  grid-column-start: unset;
+  grid-column-end: unset;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .box1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .box2 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+  }
+
+  .box3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}

@@ -1,0 +1,86 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: teal;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  border: 1px dashed black;
+  background-color: pink;
+  padding: 20px;
+  flex-basis: 200px;
+}
+
+.card1 {
+  flex-grow: 1;
+}
+
+.card2 {
+  flex-grow: 2;
+}
+
+.container-test {
+  padding: 20px;
+  background-color: teal;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.box-test {
+  height: 200px;
+}
+
+.test-2 {
+  align-self: flex-start;
+}
+
+.section-1 {
+  height: 500px;
+}
+
+/* .wrapper {
+  margin: 4rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-col-1 {
+  flex-grow: 1;
+}
+
+.flex-col-2 {
+  flex-grow: 2;
+}
+
+.flex-box {
+  padding: 32px;
+  flex-grow: 1;
+}
+
+.box1,
+.box4 {
+  background-color: mediumseagreen;
+}
+
+.box2,
+.box6 {
+  background-color: steelblue;
+}
+
+.box3,
+.box5 {
+  background-color: gold;
+} */
